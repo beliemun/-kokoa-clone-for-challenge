@@ -13,7 +13,7 @@
 }
 
 #chat-screen .status-bar {
-    z-index: 2;
+    z-index: 3;
 }
 
 @keyframes fadeIn {

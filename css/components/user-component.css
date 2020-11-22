@@ -1,46 +1,105 @@
-.user-component {
-  justify-content: space-between;
-}
-
-.user-component,
-.user-component__column:first-child {
-  display: flex;
-  align-items: center;
-}
-
-.user-component__avatar {
-  width: 70px;
-  height: 70px;
-  border-radius: 30px;
-  margin-right: 20px;
-}
-
-.user-component__title {
-  font-size: 22px;
-  font-weight: 600;
-}
-
-.user-component__title--not-bold {
-  font-weight: 400;
-}
-
-.user-components__subtitle {
-  font-size: 17px;
-  margin-top: 8px;
-  color: rgba(0, 0, 0, 0.5);
-}
-
-.user-component--xl {
-  width: 80px;
-  height: 80px;
-}
-
-.user-component--sm {
-  width: 60px;
-  height: 60px;
-  border-radius: 25px;
-}
-
-.user-component__column:last-child {
-  color: rgba(0, 0, 0, 0.5);
-}
+                .user-component {
+                    padding: 15px;
+                    border-radius: 20px;
+                    justify-content: space-between;
+                    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.07);
+                    margin-bottom: 20px;
+                }
+                
+                .user-component,
+                .user-component__column:first-child {
+                    display: flex;
+                    align-items: center;
+                }
+                
+                .user-component__avatar {
+                    border-radius: 30px;
+                    margin-right: 20px;
+                }
+                
+                .user-component__title {
+                    font-size: 22px;
+                    font-weight: 600;
+                }
+                
+                .user-component__title--not-bold {
+                    font-size: 18px;
+                    font-weight: 300;
+                }
+                
+                .user-components__subtitle {
+                    font-size: 17px;
+                    margin-top: 8px;
+                    color: rgba(0, 0, 0, 0.5);
+                }
+                
+                .user-component__text {
+                    position: relative;
+                }
+                
+                .user-component__text i {
+                    position: absolute;
+                    bottom: 0px;
+                    right: -20px;
+                    color: tomato;
+                }
+                
+                .user-component--xl {
+                    width: 70px;
+                    height: 70px;
+                }
+                
+                .user-component--sm {
+                    width: 60px;
+                    height: 60px;
+                    border-radius: 25px;
+                }
+                
+                .user-component__column:last-child {
+                    color: rgba(0, 0, 0, 0.3);
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-end;
+                }
+                
+                .user-component-time {
+                    display: block;
+                    margin-bottom: 10px;
+                }
+                
+                .user-component__hot {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                
+                .user-component__hot .hot {
+                    font-size: 14px;
+                    color: white;
+                    background-color: tomato;
+                    border-radius: 5px;
+                    padding: 5px;
+                }
+                
+                .user-component__hot span {
+                    margin-right: 5px;
+                }
+                
+                @keyframes hotColor {
+                    0% {
+                        background-color: red;
+                        transform: rotateZ(0deg) scale(1);
+                    }
+                    50% {
+                        background-color: orange;
+                        transform: rotateZ(180deg) scale(0.7);
+                    }
+                    100% {
+                        background-color: red;
+                        transform: rotateZ(360deg) scale(1);
+                    }
+                }
+                
+                .hot {
+                    animation: hotColor 2s ease-out infinite;
+                }

@@ -1,46 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Welcome to KoKoa Talk</title>
+    <title>Welcome to LIME</title>
     <link rel="stylesheet" href="css/styles.css" />
-  </head>
-  <body>
+</head>
+
+<body>
     <div class="status-bar">
-      <div class="status-bar__column">
-        <span>No Service</span>
-        <i class="fas fa-wifi"></i>
-      </div>
+        <div class="status-bar__column">
+            <span>No Service</span>
+            <i class="fas fa-wifi"></i>
+        </div>
 
-      <div class="status-bar__column">
-        <span>18:34</span>
-      </div>
+        <div class="status-bar__column">
+            <span>18:34</span>
+        </div>
 
-      <div class="status-bar__column">
-        <span>110%</span>
-        <i class="fas fa-battery-quarter fa-lg"></i>
-        <i class="fas fa-bolt"></i>
-      </div>
+        <div class="status-bar__column">
+            <span>110%</span>
+            <i class="fas fa-battery-quarter fa-lg"></i>
+            <i class="fas fa-bolt"></i>
+        </div>
+    </div>
+    <main class="login-screen">
+        <header class="welcome-header">
+            <img class="welcome-header__logo" src="resource/logo.png">
+            <h1 class="welcome-header__title">Welcome to LIME</h1>
+            <p class="welcome-header__text">
+                If you have a Kokoa Acccount, log in your email ot phone number.
+            </p>
+        </header>
+
+        <form id="login-form" action="friends.html " method="get">
+            <input name="email" type="email" placeholder="Email or phone number" required />
+            <input name="password" type="password" placeholder="Password" required />
+            <input type="submit" value="Log in" />
+            <a href="#">Find Kokoa Account or Password</a>
+        </form>
+    </main>
+
+    <div id="no-mobile">
+        <img src=" resource/logo.png ">
+        <span>Your Screen is too big!</span>
+        <span>Please reduce your screen width.</span>
     </div>
 
-    <header class="welcome-header">
-      <h1 class="welcome-header__title">Welcome to KoKoa Clone</h1>
-      <p class="welcome-header__text">
-        If you have a Kokoa Acccount, log in your email ot phone number.
-      </p>
-    </header>
+    <script src="https://kit.fontawesome.com/5993050df4.js" crossorigin="anonymous"></script>
+</body>
 
-    <form id="login-form" action="friends.html " method="get">
-      <input name="email" type="text" placeholder="Email or phone number" />
-      <input name="password" type="password" placeholder="Password" />
-      <input type="submit" value="Log in" />
-      <a href="#">Find Kokoa Account or Password</a>
-    </form>
-
-    <script
-      src="https://kit.fontawesome.com/5993050df4.js"
-      crossorigin="anonymous"
-    ></script>
-  </body>
 </html>

@@ -1,194 +1,218 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> >Friends - Lime</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Friends - Lime</title>
     <link rel="stylesheet" href="css/styles.css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="status-bar">
-        <div class="status-bar__column">
-            <span>No Service</span>
-            <i class="fas fa-wifi"></i>
-        </div>
+      <div class="status-bar__column">
+        <span>No Service</span>
+        <i class="fas fa-wifi"></i>
+      </div>
 
-        <div class="status-bar__column">
-            <span>18:34</span>
-        </div>
+      <div class="status-bar__column">
+        <span>18:34</span>
+      </div>
 
-        <div class="status-bar__column">
-            <span>110%</span>
-            <i class="fas fa-battery-quarter fa-2x"></i>
-            <i class="fas fa-bolt"></i>
-        </div>
+      <div class="status-bar__column">
+        <span>110%</span>
+        <i class="fas fa-battery-quarter fa-2x"></i>
+        <i class="fas fa-bolt"></i>
+      </div>
     </div>
 
     <header class="screen-header">
-        <h1 class="screen-header__title">Friends</h1>
-        <div class="screen-header__icons">
-            <span><i class="fas fa-search fa-lg"></i></span>
-            <span><i class="fas fa-music fa-lg"></i></span>
-            <span><a href="settings.html"><i class="fas fa-cog fa-lg"></i></a></span>
-            <div class="screen-header__red-dot badge--small"></div>
-        </div>
+      <h1 class="screen-header__title">Friends</h1>
+      <div class="screen-header__icons">
+        <span><i class="fas fa-search fa-lg"></i></span>
+        <span><i class="fas fa-music fa-lg"></i></span>
+        <span
+          ><a href="settings.html"><i class="fas fa-cog fa-lg"></i></a
+        ></span>
+        <div class="screen-header__red-dot badge--small"></div>
+      </div>
     </header>
 
     <a id="friends-display-link">
-        <i class="fas fa-info-circle"></i>
-        <span>Friends` Names Display</span>
-        <i class="fas fa-chevron-right xs"></i>
+      <i class="fas fa-info-circle"></i>
+      <span>Friends` Names Display</span>
+      <i class="fas fa-chevron-right xs"></i>
     </a>
 
     <main class="main-screen">
+      <div class="user-component">
+        <div class="user-component__column">
+          <img
+            class="user-component__avatar user-component--xl"
+            src="https://d1telmomo28umc.cloudfront.net/media/public/avatars/beliemun-1604465125.jpg"
+          />
+          <div class="user-component__text">
+            <h4 class="user-component__title">Brian Kim</h4>
+            <!-- <h6 class="user-components__subtitle">This text whatever</h6> -->
+          </div>
+        </div>
+        <div class="user-component__column"></div>
+      </div>
+
+      <div class="friends-screen__channel">
+        <div class="friends-screen__channel-header">
+          <span class="">Channel</span>
+          <i class="fas fa-chevron-up xs"></i>
+        </div>
+
         <div class="user-component">
-            <div class="user-component__column">
-                <img class="user-component__avatar user-component--xl" src="https://d1telmomo28umc.cloudfront.net/media/public/avatars/beliemun-1604465125.jpg" />
-                <div class="user-component__text">
-                    <h4 class="user-component__title">Brian Kim</h4>
-                    <!-- <h6 class="user-components__subtitle">This text whatever</h6> -->
-                </div>
+          <div class="user-component__column">
+            <img
+              class="user-component__avatar user-component--sm"
+              src="resource/nico.jpg"
+            />
+            <div class="user-component__text">
+              <h4 class="user-component__title user-component__title--not-bold">
+                Let`s make KIMCHI with Nico
+              </h4>
             </div>
-            <div class="user-component__column"></div>
+          </div>
+          <div class="user-component__column">
+            <div class="user-component__hot">
+              <span class="hot">Hot</span>
+              <span>1,542</span>
+              <i class="fas fa-chevron-right xs"></i>
+            </div>
+          </div>
         </div>
 
-        <div class="friends-screen__channel">
-            <div class="friends-screen__channel-header">
-                <span class="">Channel</span>
-                <i class="fas fa-chevron-up xs"></i>
+        <div class="user-component">
+          <div class="user-component__column">
+            <img
+              class="user-component__avatar user-component--sm"
+              src=" resource/book.jpg "
+            />
+            <div class="user-component__text">
+              <h4 class="user-component__title user-component__title--not-bold">
+                The best books for the developer
+              </h4>
             </div>
-
-            <div class="user-component">
-                <div class="user-component__column">
-                    <img class="user-component__avatar user-component--sm" src="resource/nico.jpg" />
-                    <div class=" user-component__text ">
-                        <h4 class=" user-component__title user-component__title--not-bold ">
-                            Let`s make KIMCHI with Nico
-                        </h4>
-                    </div>
-                </div>
-                <div class=" user-component__column ">
-                    <div class=" user-component__hot ">
-                        <span class=" hot ">Hot</span>
-                        <span>1,542</span>
-                        <i class=" fas fa-chevron-right xs "></i>
-                    </div>
-                </div>
+          </div>
+          <div class="user-component__column">
+            <div>
+              <span>1</span>
+              <i class="fas fa-chevron-right xs"></i>
             </div>
-
-            <div class=" user-component ">
-                <div class=" user-component__column ">
-                    <img class=" user-component__avatar user-component--sm " src=" resource/book.jpg " />
-                    <div class=" user-component__text ">
-                        <h4 class=" user-component__title user-component__title--not-bold ">
-                            The best books for the developer
-                        </h4>
-                    </div>
-                </div>
-                <div class=" user-component__column ">
-                    <div>
-                        <span>1</span>
-                        <i class=" fas fa-chevron-right xs "></i>
-                    </div>
-                </div>
-            </div>
-
-            <div class=" user-component ">
-                <div class=" user-component__column ">
-                    <img class=" user-component__avatar user-component--sm " src=" resource/lynn.jpg " />
-                    <div class=" user-component__text ">
-                        <h4 class=" user-component__title user-component__title--not-bold ">
-                            Let`s talk with Lynn
-                        </h4>
-                    </div>
-                </div>
-                <div class=" user-component__column ">
-                    <div class=" user-component__hot ">
-                        <span class=" hot ">Hot</span>
-                        <span>342</span>
-                        <i class=" fas fa-chevron-right xs "></i>
-                    </div>
-                </div>
-            </div>
-
-            <div class=" friends-screen__channel-header ">
-                <span class=" ">Friends</span>
-                <i class=" fas fa-chevron-up xs "></i>
-            </div>
-
-            <div class=" user-component ">
-                <div class=" user-component__column ">
-                    <img class=" user-component__avatar user-component--sm " src=" resource/book.jpg " />
-                    <div class=" user-component__text ">
-                        <h4 class=" user-component__title user-component__title--not-bold ">
-                            Nico
-                        </h4>
-                    </div>
-                </div>
-                <div class=" user-component__column ">
-                    <div>
-                        <span>1</span>
-                        <i class=" fas fa-chevron-right xs "></i>
-                    </div>
-                </div>
-            </div>
-
-            <div class=" user-component ">
-                <div class=" user-component__column ">
-                    <img class=" user-component__avatar user-component--sm " src=" resource/lynn.jpg " />
-                    <div class=" user-component__text ">
-                        <h4 class=" user-component__title user-component__title--not-bold ">
-                            Lynn
-                        </h4>
-                    </div>
-                </div>
-                <div class=" user-component__column ">
-                    <div>
-                        <span>1</span>
-                        <i class=" fas fa-chevron-right xs "></i>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+
+        <div class="user-component">
+          <div class="user-component__column">
+            <img
+              class="user-component__avatar user-component--sm"
+              src=" resource/lynn.jpg "
+            />
+            <div class="user-component__text">
+              <h4 class="user-component__title user-component__title--not-bold">
+                Let`s talk with Lynn
+              </h4>
+            </div>
+          </div>
+          <div class="user-component__column">
+            <div class="user-component__hot">
+              <span class="hot">Hot</span>
+              <span>342</span>
+              <i class="fas fa-chevron-right xs"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="friends-screen__channel-header">
+          <span class=" ">Friends</span>
+          <i class="fas fa-chevron-up xs"></i>
+        </div>
+
+        <div class="user-component">
+          <div class="user-component__column">
+            <img
+              class="user-component__avatar user-component--sm"
+              src=" resource/book.jpg "
+            />
+            <div class="user-component__text">
+              <h4 class="user-component__title user-component__title--not-bold">
+                Nico
+              </h4>
+            </div>
+          </div>
+          <div class="user-component__column">
+            <div>
+              <span>1</span>
+              <i class="fas fa-chevron-right xs"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="user-component">
+          <div class="user-component__column">
+            <img
+              class="user-component__avatar user-component--sm"
+              src=" resource/lynn.jpg "
+            />
+            <div class="user-component__text">
+              <h4 class="user-component__title user-component__title--not-bold">
+                Lynn
+              </h4>
+            </div>
+          </div>
+          <div class="user-component__column">
+            <div>
+              <span>1</span>
+              <i class="fas fa-chevron-right xs"></i>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
 
-    <nav class=" nav ">
-        <ul class=" nav__list ">
-            <li class=" nav__btn ">
-                <a class=" nav__link " href=" friends.html ">
-                    <i class=" fas fa-user fa-2x "></i>
-                </a>
-            </li>
-            <li class=" nav__btn ">
-                <a class=" nav__link " href=" chats.html ">
-                    <span class=" nav__notification badge ">1</span>
-                    <i class=" far fa-comment fa-2x "></i>
-                </a>
-            </li>
-            <li class=" nav__btn ">
-                <a class=" nav__link " href=" find.html ">
-                    <i class=" fas fa-search fa-2x "></i>
-                </a>
-            </li>
-            <li class=" nav__btn ">
-                <a class=" nav__link " href=" more.html ">
-                    <div class=" nav__red-dot badge--small "></div>
-                    <i class=" fas fa-ellipsis-h fa-2x "></i>
-                </a>
-            </li>
-        </ul>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__btn">
+          <a class="nav__link" href=" friends.html ">
+            <i class="fas fa-user fa-2x"></i>
+          </a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href=" chats.html ">
+            <span class="nav__notification badge">1</span>
+            <i class="far fa-comment fa-2x"></i>
+          </a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href=" find.html ">
+            <i class="fas fa-search fa-2x"></i>
+          </a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href=" more.html ">
+            <div class="nav__red-dot badge--small"></div>
+            <i class="fas fa-ellipsis-h fa-2x"></i>
+          </a>
+        </li>
+      </ul>
     </nav>
 
-    <div class=" splash-screen ">
+    <!-- <div class=" splash-screen ">
         <img src=" resource/logo.png ">
-    </div>
+    </div> -->
 
     <div id="no-mobile">
-        <img src=" resource/logo.png ">
-        <span>Your Screen is too big!</span>
-        <span>Please reduce your screen width.</span>
+      <img src=" resource/logo.png " />
+      <span>Your Screen is too big!</span>
+      <span>Please reduce your screen width.</span>
     </div>
-</body>
 
+    <script
+      src="https://kit.fontawesome.com/5993050df4.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

@@ -1,0 +1,26 @@
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  #no-ie {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    z-index: 200;
+    width: 100vw;
+    height: 100vh;
+    background-color: #3ace01;
+  }
+
+  #no-mobile img {
+    width: 200px;
+    margin-bottom: 40px;
+  }
+
+  #no-mobile span {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 600px;
+    color: white;
+  }
+}

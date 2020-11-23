@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;600&display=swap");
 @import "reset.css";
 @import "variables.css";
 
@@ -12,6 +12,7 @@
 @import "components/badge.css";
 @import "components/icon-row.css";
 @import "components/no-mobile.css";
+@import "components/no-ie.css";
 
 /* Screens */
 
@@ -22,11 +23,11 @@
 @import "screens/settings.css";
 @import "screens/chat.css";
 body {
-    color: #2e363e;
-    font-family: 'Rubik', sans-serif;
+  color: #2e363e;
+  font-family: "Rubik", sans-serif;
 }
 
 .main-screen {
-    padding: 0px var(--horizontal-space);
-    height: 100vh;
+  padding: 0px var(--horizontal-space);
+  height: 100vh;
 }

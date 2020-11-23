@@ -12,12 +12,12 @@
     background-color: #3ace01;
   }
 
-  #no-mobile img {
+  #no-ie img {
     width: 200px;
     margin-bottom: 40px;
   }
 
-  #no-mobile span {
+  #no-ie span {
     font-size: 20px;
     line-height: 28px;
     font-weight: 600px;

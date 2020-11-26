@@ -1,72 +1,72 @@
 #friends-display-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    background-color: #34495e;
-    padding: 15px 0px;
-    font-size: 18px;
-    margin-bottom: 30px;
-    margin-top: -15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: #34495e;
+  padding: 15px 0px;
+  font-size: 18px;
+  margin-bottom: 30px;
+  margin-top: -15px;
 }
 
 #friends-display-link i {
-    color: white;
-    margin: 0px 10px;
+  color: white;
+  margin: 0px 10px;
 }
 
 .friends-screen {
-    padding: 0px var(--horizontal-space);
+  padding: 0px var(--horizontal-space);
 }
 
 .friends-screen__channel {
-    margin-top: 30px;
+  margin-top: 30px;
 }
 
 .friends-screen__channel-header {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 15px;
-    color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  color: rgba(0, 0, 0, 0.5);
 }
 
 @keyframes hideSplashScreen {
-    0%,
-    25% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-        visibility: hidden;
-    }
+  0%,
+  25% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
 }
 
 @keyframes showSplashScreenIcon {
-    from {
-        opacity: 0;
-        transform: scale(0.9);
-    }
-    to {
-        opacity: 1;
-        transform: scale(1);
-    }
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 .splash-screen {
-    position: absolute;
-    top: 0px;
-    z-index: 3;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--green);
-    animation: hideSplashScreen 1s ease-out forwards;
-    animation-delay: 1s;
+  position: fixed;
+  top: 0px;
+  z-index: 3;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--green);
+  animation: hideSplashScreen 1s ease-out forwards;
+  animation-delay: 1s;
 }
 
 .splash-screen img {
-    width: 300px;
-    animation: showSplashScreenIcon 1s ease-in-out forwards;
+  width: 300px;
+  animation: showSplashScreenIcon 1s ease-in-out forwards;
 }
